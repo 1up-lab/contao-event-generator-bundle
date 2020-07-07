@@ -1,0 +1,19 @@
+includes:
+        - vendor/contao/phpstan/extension.neon
+
+parameters:
+    bootstrapFiles:
+        - %rootDir%/../../../vendor/autoload.php
+
+    contao:
+        services_yml_path: %rootDir%/../../../vendor/contao/core-bundle/src/Resources/config/services.yml
+
+    checkMissingIterableValueType: false
+
+    excludes_analyse:
+        - vendor
+
+    universalObjectCratesClasses:
+        - Contao\Template
+        - Contao\Widget
+        - Contao\Model\Collection

@@ -1,0 +1,2 @@
+Contao Event Generator Bundle
+=============================

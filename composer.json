@@ -1,0 +1,64 @@
+{
+    "name": "oneup/contao-event-generator-bundle",
+    "type": "contao-bundle",
+    "description": "Generate multiple events with ease!",
+    "keywords": [
+        "contao",
+        "modules",
+        "calendar",
+        "events",
+        "generator"
+    ],
+    "homepage": "https://1up.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Greminger",
+            "email": "dg@1up.io",
+            "homepage": "https://1up.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "contao/calendar-bundle": "^4.9",
+        "contao/core-bundle": "^4.9",
+        "kmielke/calendar-extended-bundle": "^1.0",
+        "menatwork/contao-multicolumnwizard-bundle": "^3.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "contao/news-bundle": "^4.9",
+        "contao/phpstan": "^0.12",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpstan/phpstan": "^0.12.10",
+        "phpunit/phpunit": "^8.5",
+        "symfony/monolog-bundle": "^3.5",
+        "symfony/var-dumper": "^4.4 || ^5.0"
+    },
+    "config": {
+        "preferred-install": {
+            "contao/core-bundle": "source",
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "contao-manager-plugin": "Oneup\\Contao\\EventGeneratorBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oneup\\Contao\\EventGeneratorBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oneup\\Contao\\EventGeneratorBundle\\Tests\\": "tests"
+        }
+    },
+    "support": {
+        "email": "hello@1up.io",
+        "issues": "https://github.com/1up-lab/contao-event-generator-bundle/issues",
+        "source": "https://github.com/1up-lab/contao-event-generator-bundle/issues"
+    }
+}

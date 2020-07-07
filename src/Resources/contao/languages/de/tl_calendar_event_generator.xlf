@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file>
+        <body>
+            <trans-unit id="tl_calendar_event_generator.title.0">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.title.1">
+                <target>Bitte geben Sie den Event-Titel ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.author.0">
+                <target>Autor</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.author.1">
+                <target>Hier können Sie den Autor des Events ändern.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.from.0">
+                <source>Start date</source>
+                <target>Startdatum</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.from.1">
+                <target>Bitte geben Sie das Startdatum gemäss des globalen Datumsformats ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.to.0">
+                <target>Enddatum</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.to.1">
+                <target>Bitte geben Sie das Enddatum gemäss des globalen Datumsformats ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.slots.0">
+                <target>Slots</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.slots.1">
+                <target>Bitte konfigurieren Sie alle verfügbaren Slots pro Tag.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.slots.0">
+                <target>Slots</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.slots.1">
+                <target>Bitte konfigurieren Sie alle verfügbaren Slots pro Tag.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.startTime.0">
+                <target>Startzeit</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.endTime.0">
+                <target>Endzeit</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.weekdays.0">
+                <target>Wochentage</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.weekdays.1">
+                <target>Bitte wählen Sie alle Wochentage, für welche die Events generiert werden sollen.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.addRegistration.0">
+                <target>Anmeldung aktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.addRegistration.1">
+                <target>Aktivierung der Anmeldung für diese Events.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.registrationForm.0">
+                <target>Anmeldeformlar</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.registrationForm.1">
+                <target>Das gewählte Anmeldeformular wird im angepassten Event Template eingefügt.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.maxParticipants.0">
+                <target>Max. Anzahl Teilnehmer</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.maxParticipants.1">
+                <target>Anzahl der max. Teilnehmer, Anmeldungen und freie Plätze.</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.registrationDeadline.0">
+                <target>Anmeldeschluss</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.registrationDeadline.1">
+                <target>Anmeldeschluss vor Beginn des Events in Sekunden (86400 = 1 Tag).</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

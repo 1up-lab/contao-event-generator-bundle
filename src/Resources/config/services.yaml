@@ -1,0 +1,5 @@
+services:
+    Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener:
+        public: true
+        arguments:
+            - '@database_connection'
