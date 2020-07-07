@@ -10,7 +10,7 @@ This bundle is made for Contao 4.9 and newer.
 
 Why this bundle?
 ----------------
-It's now easy to generate multiple recurring events in a specific period of times.
+It's now easy to generate multiple recurring events in a specific period of times. It works as an extension to [kmielke/calendar-extended-bundle](https://github.com/kmielke/calendar-extended-bundle).
 
 Kudos
 -----
