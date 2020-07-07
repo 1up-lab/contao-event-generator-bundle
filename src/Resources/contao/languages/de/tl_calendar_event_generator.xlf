@@ -58,7 +58,7 @@
                 <target>Aktivierung der Anmeldung für diese Events.</target>
             </trans-unit>
             <trans-unit id="tl_calendar_event_generator.registrationForm.0">
-                <target>Anmeldeformlar</target>
+                <target>Anmeldeformular</target>
             </trans-unit>
             <trans-unit id="tl_calendar_event_generator.registrationForm.1">
                 <target>Das gewählte Anmeldeformular wird im angepassten Event Template eingefügt.</target>
