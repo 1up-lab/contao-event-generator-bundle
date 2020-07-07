@@ -17,6 +17,12 @@
             "email": "dg@1up.io",
             "homepage": "https://1up.io",
             "role": "Developer"
+        },
+        {
+            "name": "nuun GmbH",
+            "email": "info@nuun.ch",
+            "homepage": "https://nuun.ch",
+            "role": "Projectmanager"
         }
     ],
     "require": {
