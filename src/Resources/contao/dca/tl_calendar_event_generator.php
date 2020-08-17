@@ -8,10 +8,10 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
         'dataContainer' => 'Table',
         'ptable' => 'tl_calendar',
         'onload_callback' => [
-            [Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener::class, 'onLoad'],
+            ['oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener', 'onLoad'],
         ],
         'onsubmit_callback' => [
-            [Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener::class, 'onSubmit'],
+            ['oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener', 'onSubmit'],
         ],
         'sql' => [
             'keys' => [
@@ -23,7 +23,7 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
 
     'edit' => [
         'buttons_callback' => [
-            [Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener::class, 'getButtons'],
+            ['oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener', 'getButtons'],
         ],
     ],
 
@@ -115,7 +115,7 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
             'eval' => [
                 'tl_class' => 'clr',
                 'mandatory' => true,
-                'columnsCallback' => [Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener::class, 'getSlots'],
+                'columnsCallback' => ['oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener', 'getSlots'],
             ],
             'sql' => 'blob NULL',
         ],
@@ -131,7 +131,7 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
         'weekdays' => [
             'exclude' => true,
             'inputType' => 'checkboxWizard',
-            'options_callback' => [Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener::class, 'getWeekdays'],
+            'options_callback' => ['oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener', 'getWeekdays'],
             'reference' => &$GLOBALS['TL_LANG']['DAYS'],
             'eval' => [
                 'multiple' => true,
@@ -141,7 +141,7 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
         'registrationForm' => [
             'exclude' => true,
             'inputType' => 'select',
-            'options_callback' => [Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener::class, 'getRegistrationForms'],
+            'options_callback' => ['oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener', 'getRegistrationForms'],
             'eval' => [
                 'chosen' => true,
                 'mandatory' => true,

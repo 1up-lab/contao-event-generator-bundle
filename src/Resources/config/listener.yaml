@@ -1,0 +1,6 @@
+services:
+    oneup_contao_event_generator_bundle.event_listener.calendar_event_listener:
+        class: Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventListener
+        public: true
+        tags:
+            - { name: contao.hook, hook: getAllEvents, method: onGetAllEvents, priority: 0 }
