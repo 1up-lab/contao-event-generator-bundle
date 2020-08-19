@@ -4,3 +4,9 @@ services:
         public: true
         tags:
             - { name: contao.hook, hook: getAllEvents, method: onGetAllEvents, priority: 0 }
+
+    oneup_contao_event_generator_bundle.event_listener.event_time_insert_tag_listener:
+        class: Oneup\Contao\EventGeneratorBundle\EventListener\EventTimeInsertTagListener
+        public: true
+        tags:
+            - { name: contao.hook, hook: replaceInsertTags }
