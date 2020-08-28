@@ -63,6 +63,12 @@
             <trans-unit id="tl_calendar_event_generator.registrationForm.1">
                 <target>Das gewählte Anmeldeformular wird im angepassten Event Template eingefügt.</target>
             </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.registrationConfirmation.0">
+                <target>Anmeldung / Abmeldung mit Bestätigung</target>
+            </trans-unit>
+            <trans-unit id="tl_calendar_event_generator.registrationConfirmation.1">
+                <target>Es muss je eine Seite mit einem Modul "Bestätigung Anmeldung / Abmeldung" erstellt werden.</target>
+            </trans-unit>
             <trans-unit id="tl_calendar_event_generator.maxParticipants.0">
                 <target>Max. Anzahl Teilnehmer</target>
             </trans-unit>

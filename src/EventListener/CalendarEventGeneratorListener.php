@@ -68,6 +68,7 @@ class CalendarEventGeneratorListener
         $author = $data->author;
         $addRegistration = $data->addRegistration;
         $registrationForm = $data->registrationForm;
+        $registrationConfirmation = $data->registrationConfirmation;
         $maxParticipants = $data->maxParticipants;
         $registrationDeadline = $data->registrationDeadline;
 
@@ -135,6 +136,7 @@ class CalendarEventGeneratorListener
                 $event->tstamp = time();
                 $event->useRegistration = $addRegistration;
                 $event->regform = $registrationForm;
+                $event->regconfirm = $registrationConfirmation;
                 $event->regperson = serialize([['mini' => '0', 'maxi' => $maxParticipants]]);
                 $event->regstartdate = $startTime->format('U') - $registrationDeadline;
                 $event->gid = $gid;

@@ -39,7 +39,7 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
 
     // Subpalettes
     'subpalettes' => [
-        'addRegistration' => 'registrationForm,maxParticipants,registrationDeadline',
+        'addRegistration' => 'registrationConfirmation,registrationForm,maxParticipants,registrationDeadline',
     ],
 
     // Fields
@@ -149,6 +149,13 @@ $GLOBALS['TL_DCA']['tl_calendar_event_generator'] = [
                 'tl_class' => 'w50 clr',
             ],
             'sql' => 'int(10) unsigned NOT NULL default 0',
+        ],
+        'registrationConfirmation' => [
+            'default' => 0,
+            'exclude' => true,
+            'inputType' => 'checkbox',
+            'eval' => ['tl_class' => 'w50'],
+            'sql' => "char(1) NOT NULL default ''",
         ],
         'registrationDeadline' => [
             'exclude' => true,
