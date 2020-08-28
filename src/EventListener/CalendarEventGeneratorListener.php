@@ -12,16 +12,25 @@ use Contao\Input;
 use Contao\Model\Collection;
 use Contao\StringUtil;
 use Doctrine\DBAL\Connection;
+use Oneup\Contao\EventGeneratorBundle\Dca\Alias\EventAliasGenerator;
 use Oneup\Contao\EventGeneratorBundle\Model\CalendarEventGeneratorModel;
 
 class CalendarEventGeneratorListener
 {
-    /** @var Connection */
+    /**
+     * @var Connection
+     */
     private $connection;
 
-    public function __construct(Connection $connection)
+    /**
+     * @var EventAliasGenerator
+     */
+    private $aliasGenerator;
+
+    public function __construct(Connection $connection, EventAliasGenerator $aliasGenerator)
     {
         $this->connection = $connection;
+        $this->aliasGenerator = $aliasGenerator;
     }
 
     public function buttonCallback(array $record, string $href, string $label, string $title, string $icon, string $attributes, string $table, ?array $rootIds, ?array $childIds, bool $circularReference, ?string $previousLabel, ?string $nextLabel, DataContainer $dataContainer): string
@@ -129,6 +138,10 @@ class CalendarEventGeneratorListener
                 $event->regperson = serialize([['mini' => '0', 'maxi' => $maxParticipants]]);
                 $event->regstartdate = $startTime->format('U') - $registrationDeadline;
                 $event->gid = $gid;
+
+                $event->save();
+
+                $event->alias = $this->aliasGenerator->generate($event);
 
                 $event->save();
             }

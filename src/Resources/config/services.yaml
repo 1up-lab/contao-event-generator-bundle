@@ -1,6 +1,8 @@
 services:
-    oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener:
-        class: Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener
+    oneup_contao_event_generator_bundle.alias_generator.event:
+        class: Oneup\Contao\EventGeneratorBundle\Dca\Alias\EventAliasGenerator
         public: true
         arguments:
             - '@database_connection'
+            - '@contao.slug'
+            - '@contao.translation.translator'

@@ -10,3 +10,10 @@ services:
         public: true
         tags:
             - { name: contao.hook, hook: replaceInsertTags }
+
+    oneup_contao_event_generator_bundle.event_listener.calendar_event_generator_listener:
+        class: Oneup\Contao\EventGeneratorBundle\EventListener\CalendarEventGeneratorListener
+        public: true
+        arguments:
+            - '@database_connection'
+            - '@oneup_contao_event_generator_bundle.alias_generator.event'
