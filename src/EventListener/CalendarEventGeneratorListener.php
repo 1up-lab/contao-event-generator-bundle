@@ -138,11 +138,9 @@ class CalendarEventGeneratorListener
                 $event->regperson = serialize([['mini' => '0', 'maxi' => $maxParticipants]]);
                 $event->regstartdate = $startTime->format('U') - $registrationDeadline;
                 $event->gid = $gid;
-
                 $event->save();
 
                 $event->alias = $this->aliasGenerator->generate($event);
-
                 $event->save();
             }
         }
