@@ -113,8 +113,8 @@ class CalendarEventGeneratorListener
             }
 
             foreach ($slots as $slot) {
-                $start = explode(':', $slot['startTime']);
-                $end = explode(':', $slot['endTime']);
+                $start = explode(':', (string) $slot['startTime']);
+                $end = explode(':', (string) $slot['endTime']);
 
                 $startTime = clone $date;
                 $startTime->setTime((int) $start[0], (int) $start[1]);
